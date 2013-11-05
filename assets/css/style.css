@@ -152,6 +152,16 @@ pre {
   background: #303030;
 }
 
+.button-social {
+  color: #f03838;  
+  /*background: #f03838;*/
+  float: left;
+  margin: 0 0 0 10px;
+  padding: 8px;
+}
+.button-social:hover {
+  color: #FEFEFE;
+}
 /* ============================================================ */
 /* Site Header */
 /* ============================================================ */
