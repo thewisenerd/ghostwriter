@@ -142,14 +142,15 @@ pre {
   background: #f03838;
 }
 
-.button-square {
-  background: #f03838;
+.button-square, .button-header {
+  /*background: #f03838;*/
   float: left;
   margin: 0 0 0 10px;
   padding: 8px;
 }
-.button-square:hover {
-  background: #303030;
+.button-square:hover, .button-header:hover {
+  /*background: #303030;*/
+  color:#303030;
 }
 
 .button-social {
@@ -162,6 +163,9 @@ pre {
 .button-social:hover {
   color: #FEFEFE;
 }
+/*.button-header{
+  color:#f03838;  
+}*/
 /* ============================================================ */
 /* Site Header */
 /* ============================================================ */
