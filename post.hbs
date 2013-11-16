@@ -17,6 +17,15 @@
                 {{/if}}
             </div>
         </article>
+        {{#if author}}
+        <section class="author">
+            <img src="{{author.image}}" class="userimage" alt="{{author.name}}" />
+            <p class="author-content">Author: {{author.name}}<br>
+            <a href="mailto:{{author.email}}">Email me</a><br>
+            {{author.bio}}</p>
+        </section>
+        {{/if}}
+
     {{/post}}
 </div>
 {{> footer}}
