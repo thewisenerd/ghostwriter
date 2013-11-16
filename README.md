@@ -5,3 +5,5 @@ This is a fork of the [Ghost](http://github.com/tryghost/ghost/) theme [Ghostwri
 The changes are about using FontAwesome, and a different fixed header with {{blog.cover}} option to give some more customization to users.
 
 To see a live demo please visit my [Blog](http://curiousnerd.me).
+
+In order to customize this theme, remember to add your social links in the `footer.hbs` file inside `/footer` folder and add a blog logo inside your ghost settings page (max 400px height).
