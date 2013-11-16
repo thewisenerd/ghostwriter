@@ -24,9 +24,30 @@
     {{ghost_head}}
 </head>
 <body class="{{body_class}}">
+    
+    <div class="wrapper">
+        
+        <header class="site-header">
+            <div class="container">
 
-    <div id="ajax-container">
-        {{{body}}}
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a class="js-ajax-link" title="{{@blog.title}}" href="{{@blog.url}}">{{@blog.title}}</a>
+                        <a class="button-social js-ajax-link js-show-index" href="{{@blog.url}}"><i class="fa fa-reorder"></i></a>
+                        <a class="button-social" href="{{@blog.url}}/rss"><i class="fa fa-rss"></i></a>
+                    </h1>
+                </div>
+
+            </div>
+        </header>
+        <div id="banner" {{#if @blog.cover}}style="background:url({{@blog.cover}})no-repeat fixed;"{{/if}}>
+            <h2 align="center" style="margin-top:100px;">{{@blog.description}}</h2>
+        </div>
+
+        <div id="ajax-container">
+            {{{body}}}
+        </div>
+
     </div>
 
     {{! Ghost outputs important scripts and data with this tag }}

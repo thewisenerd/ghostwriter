@@ -5,6 +5,12 @@ html, body {
   height: 100%;
 }
 
+/* Background-color */
+.site-header,
+#ajax-container {
+  background-color: #f2f2f2;
+}
+
 body {
   background: #fefefe;
   color: #424242;
@@ -173,7 +179,7 @@ pre {
   width: 100%;
   z-index: 10;
   padding: 35px 0 0;
-
+  margin: -15px 0 0px;
   /*padding: 100px 0 35px;
   overflow: auto;
   text-align: center;*/
@@ -212,8 +218,9 @@ pre {
 #content {
   width: 100%;
   position: relative;
-  top: 400px;
+  top: 399px;
   background: #fefefe;
+  background-color: #f2f2f2;  
 }
 
 /* ============================================================ */
@@ -304,7 +311,7 @@ pre {
 .post-list {
   border-top: 6px solid #303030;
   list-style: none;
-  margin: 80px 40px 0;
+  margin: 15px 40px 0;
   padding: 35px 0 0;
 }
 
