@@ -1,9 +1,5 @@
-# Ghostwriter
+# Teqnology Ghostwriter 
 
-A simple AJAX driven theme for [Ghost](http://github.com/tryghost/ghost/).
+This is a fork of the [Ghost](http://github.com/tryghost/ghost/) theme [Ghostwriter](http://roryg.github.io/ghostwriter).
 
-[View a demo of Ghostwriter](http://roryg.github.io/ghostwriter)
-
-[Download Ghostwriter](https://github.com/roryg/ghostwriter/archive/master.zip)
-
-![Ghostwriter home page](https://github.com/roryg/ghostwriter/blob/master/screenshot.png?raw=true)
+The changes are about using FontAwesome, and a different fixed header with {{blog.cover}} option to give some more customization to users.

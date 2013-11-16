@@ -12,7 +12,7 @@
 
         </div>
     </header>
-    <div id="banner">
+    <div id="banner" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
         <h2 align="center" style="margin-top:100px;">{{@blog.description}}</h2>
     </div>
     <div id="content">
