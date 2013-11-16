@@ -207,6 +207,7 @@ pre {
   height: 300px;
   position: fixed;
   top: 100px;
+  background-color: #ecf0f1;  
 }
 #content {
   width: 100%;
