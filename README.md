@@ -6,4 +6,4 @@ The changes are about using FontAwesome, and a different fixed header with {{blo
 
 To see a live demo please visit my [Blog](http://curiousnerd.me).
 
-In order to customize this theme, remember to add your social links in the `footer.hbs` file inside `/footer` folder and add a blog logo inside your ghost settings page (max 400px height).
+In order to customize this theme, remember to add your social links in the `footer.hbs` file inside `/footer` folder and add a blog cover inside your ghost settings page (best fit should be 435px height).
