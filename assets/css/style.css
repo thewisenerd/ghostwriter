@@ -230,7 +230,7 @@ pre {
 #content {
   width: 100%;
   position: relative;
-  top: 425px;
+  top: 400px;
   background: #fefefe;
   background-color: #f2f2f2;  
 }
@@ -406,7 +406,7 @@ pre {
 .footer {
   background: #303030;
   color: #D3D3D3;
-  height: 265px;
+  height: 305px;
   overflow: auto;
 }
 .footer .site-title-wrapper {
