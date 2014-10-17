@@ -191,7 +191,6 @@ pre {
   /*padding: 100px 0 35px;
   overflow: auto;
   text-align: center;*/
-  text-transform: uppercase;
 }
 
 .site-title-wrapper {
@@ -233,6 +232,10 @@ pre {
   top: 400px;
   background: #fefefe;
   background-color: #f2f2f2;  
+}
+
+#currentquote {
+  font-size: 14px;
 }
 
 /* ============================================================ */
