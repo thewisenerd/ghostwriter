@@ -28,17 +28,22 @@ jQuery(function($) {
     // Show the index if the url has "page" in it (a simple
     // way of checking if we're on a paginated page.)
     if (window.location.pathname.indexOf('page') === 1) {
+		console.log("window.location.pathname.indexOf('page') == 1");
         $latestPost.hide();
         $postIndex.show();
     }
 
     // Check if history is enabled for the browser
     if ( ! History.enabled) {
+		console.log("! History.enabled");
         return false;
     }
 
     History.Adapter.bind(window, 'statechange', function() {
         var State = History.getState();
+        console.log ("History.getState()");
+        console.log( State );
+        console.log("----------------");
 
         // Get the requested url and replace the current content
         // with the loaded content
@@ -72,20 +77,26 @@ jQuery(function($) {
 
     $('body').on('click', '.js-ajax-link, .pagination a', function(e) {
         e.preventDefault();
-
+		console.log ("body onclick loading"  + loading );
         if (loading === false) {
             var currentState = History.getState();
+            console.log("currentState");
+            console.log(currentState);
             var url = $(this).attr('href');
+            console.log("url:" + url);
             var title = $(this).attr('title') || null;
+            console.log("title:" + title);
 
             // If the requested url is not the current states url push
             // the new state and make the ajax call.
             if (url !== currentState.url.replace(/\/$/, "")) {
+				console.log(url + "!==" + currentState.url.replace(/\/$/, "") );
                 loading = true;
 
                 // Check if we need to show the post index after we've
                 // loaded the new content
                 if ($(this).hasClass('js-show-index') || $(this).parent('.pagination').length > 0) {
+					console.log ("showIndex" + showIndex);
                     showIndex = true;
                 }
 
