@@ -31,12 +31,11 @@ function randifyer(text) {
 
 function linkify(text) {
 	var urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-	text.replace(urlRegex, function(url) {
+	var twitPicRegex=/(\b(pic.twitter.com)\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+	return text.replace(urlRegex, function(url) {
 		var short_url = randifyer(url);
 		return '<a target="_blank" href="' + short_url + '">' + short_url + '</a>';
-	})
-	var twitPicRegex=/(\b(pic.twitter.com)\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-	return text.replace(twitPicRegex, function(url) {
+	}).replace(twitPicRegex, function(url) {
 		var arr = url.split("/");
 		var twitUrl = "http://t.co/" + arr[1];
 		var short_url = randifyer( twitUrl );
