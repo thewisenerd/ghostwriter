@@ -6,14 +6,6 @@ function get_disqus_shortname() {
     return d_id;
 }
 
-$(function()
-    {
-        if ( $("#currentquote").size() ) {
-            newquote();
-        }
-    }
-);
-
 function gentlyEncode(e) {
     return encodeURIComponent ? encodeURIComponent(e).replace(/%20(\D)?/g, "+$1").replace(/'/g, escape("'")) : escape(e).replace(/\+/g, "%2B").replace(/%20/g, "+")
 }
@@ -44,6 +36,11 @@ function linkify(text) {
 }
 
 $(window).bind("load", function() {
+
+    if ( $("#currentquote").size() ) {
+        newquote();
+    }
+
     twitterFetcher.fetch('523126940958339072', function(tweets){
         var x = tweets.length;
         var n = 0;
@@ -56,8 +53,8 @@ $(window).bind("load", function() {
                 html += '<center><i class="fa fa-twitter"></i> &nbsp;"' + linkify(tweets[n].textContent) + '" &nbsp;<i class="fa fa-twitter fa-flip-horizontal"></i></center> ';
             }
         n++;
-      }
-      html += '';
-      element.innerHTML = html;
+        }
+        html += '';
+        element.innerHTML = html;
     });
 });
