@@ -56,5 +56,14 @@ $(window).bind("load", function() {
         }
         html += '';
         element.innerHTML = html;
+
+        var elems_height=$( "#currentquote" ).height() + $( "#tweets" ).height() + $( ".site-header" ).height() + 30/*p margin*/ + 40/*margin-top*/;
+        while ( elems_height > 400 ) {
+            if ( $("#currentquote").size() ) {
+                newquote();
+            }
+            elems_height=$( "#currentquote" ).height() + $( "#tweets" ).height() + $( ".site-header" ).height() + 30/*p margin*/ + 40/*margin-top*/;
+        }
+
     });
 });
