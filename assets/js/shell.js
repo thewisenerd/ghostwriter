@@ -17,7 +17,6 @@ function randifyer(text) {
 	}).responseText;
 
 	obj = JSON.parse(value);
-	console.log(obj.data.url);
 	return obj.data.url;
 }
 
