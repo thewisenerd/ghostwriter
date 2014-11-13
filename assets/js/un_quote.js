@@ -92,7 +92,8 @@
     "People were created to be loved. Things were created to be used. The reason why the world is in chaos is because things are being loved and people are being used. — Unknown",
     "The glass is neither half-full nor half-empty: it's twice as big as it needs to be.",
     "We don't see things as they are, we see them as we are. -Anais Nin",
-    "It's the possibility of having a dream come true that makes life interesting"
+    "It's the possibility of having a dream come true that makes life interesting",
+    "Colour is everything, black and white is more. –Dominic Rouse"
  );
 
  // Similar to:
